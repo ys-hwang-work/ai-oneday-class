@@ -4,6 +4,7 @@ import streamlit as st
 
 st.title('슈퍼 시나리오 봇🥸')
 
+os.environ["OPENAI_API_KEY"] = st.secrets['API_KEY']
 keyword = st.text_input("키워드를 입력하세요")
 
 if st.button('생성하기'):
